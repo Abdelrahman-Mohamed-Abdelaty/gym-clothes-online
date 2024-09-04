@@ -175,6 +175,6 @@ if(cart){
 const returnBtn = document.querySelector('.checkout-return');
 if(returnBtn){
     returnBtn.addEventListener('click',(e)=>{
-        window.location.href='home.html'
+        window.location.href='index.html'
     })
 }
