@@ -274,72 +274,21 @@ function handleClickOutside(event) {
 document.addEventListener("click", handleClickOutside);
 
 
-
-// const products = [
-//     {
-//         "id":1,
-//         "name":"Cobra",
-//        "image1":"imgs/image-1-1.jpg",
-//        "image2":"imgs/image-1-2.jpg",
-//        "price": "1000",
-//        "discountedPrice":"799",
-//         "sizes":3,
-//         "offer":20
-//     },
-//     {
-//         "id":2,
-//         "name":"Code-Red",
-//         "image1":"imgs/image-2-1.jpg",
-//         "image2":"imgs/image-2-2.jpg",
-//        "price": "559",
-//        "discountedPrice":"480",
-//         "sizes":4,
-//         "offer":12
-//
-//     },
-//
-//     {
-//         "id":3,
-//         "name":"Night Stalker",
-//         "image1":"imgs/image-3-1.jpg",
-//         "image2":"imgs/image-3-2.jpg",
-//        "price": "680",
-//        "discountedPrice":"550",
-//         "sizes":5,
-//         "offer":19
-//     },
-//
-//     {
-//         "id":4,
-//         "name": "Blackflight",
-//         "image1":"imgs/image-4-1.jpg",
-//         "image2":"imgs/image-4-2.jpg",
-//        "price": "650",
-//        "discountedPrice":"480",
-//         "sizes":3,
-//         "offer":26,
-//     },
-//     {
-//         "id":5,
-//         "name":"sky-veins",
-//         "image1":"imgs/image-5-1.jpg",
-//         "image2":"imgs/image-5-2.jpg",
-//        "price": "559",
-//        "discountedPrice":"480",
-//         "sizes":2,
-//         "offer":12
-//     },
-//     {
-//         "id":6,
-//         "name": "   BeastMaster",
-//         "image1":"imgs/image-6-1.jpg",
-//         "image2":"imgs/image-6-2.jpg",
-//        "price": "800",
-//        "discountedPrice":"650",
-//         "sizes":5,
-//         "offer":18
-//     }
-//
-// ]
-
-
+function toggleNav() {
+    const menu = document.getElementById('menu');
+    const body = document.body;
+    if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        body.style.overflow = 'auto';
+    } else {
+        menu.classList.add('open');
+        body.style.overflow = 'hidden';
+    }
+}
+const shopNowBtn = document.querySelector('.mainbuttonshopnow')
+if(shopNowBtn){
+    shopNowBtn.addEventListener('click',(e)=>{
+        e.stopPropagation();
+        window.location.href = 'shop.html'
+    })
+}

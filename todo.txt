@@ -1,0 +1,5 @@
+add team page
+Complete shop page
+add figma pages
+add responsive
+change the background of the body of home

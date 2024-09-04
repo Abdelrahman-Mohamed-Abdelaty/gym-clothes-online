@@ -143,7 +143,7 @@ function handleNoProducts() {
     div.classList.add('add-new-product-to-cart');
     div.textContent = 'Add products'
     div.addEventListener('click',()=>{
-        window.location.href='home.html'
+        window.location.href='index.html'
     })
     document.querySelector('.checkout-products-summary').appendChild(div)
 }
