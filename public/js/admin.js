@@ -11,10 +11,21 @@ function Alert(type,msg,notReload) {
     },2000)
 
 }
+function toggleNav() {
+    const menu = document.getElementById('menu');
+    const body = document.body;
+    if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        body.style.overflow = 'auto';
+    } else {
+        menu.classList.add('open');
+        body.style.overflow = 'hidden';
+    }
+}
 async function updateProduct(e) {
     e.preventDefault();
     const id = document.querySelector('.photo-id').getAttribute('id')
-    const url = 'https://gym-clothes-online-production.up.railway.app/api/v1/products/'+id;
+    const url = 'api/v1/products/'+id;
     console.log(url)
     const price = document.querySelector('#price'+id).value;
     const offer = document.querySelector('#offer'+id).value
@@ -55,7 +66,7 @@ async function updateProduct(e) {
 async function deleteProduct(e) {
     e.preventDefault();
     const id = document.querySelector('.photo-id').getAttribute('id')
-    const url = 'https://gym-clothes-online-production.up.railway.app/api/v1/products/' + id;
+    const url = 'api/v1/products/' + id;
 
     try {
         const response = await fetch(url, {
@@ -127,7 +138,7 @@ function createProductForm(product){
 }
 
 async function createProduct() {
-    const url = 'https://gym-clothes-online-production.up.railway.app/api/v1/products';
+    const url = 'api/v1/products';
     const price = document.querySelector('#price').value;
     const offer = document.querySelector('#offer').value
     const name = document.querySelector('#name').value
@@ -181,7 +192,7 @@ function changeImage(id,imageSrc) {
     document.getElementById('mainImage'+id).src = imageSrc;
 }
 async function start (){
-    const response = await fetch('https://gym-clothes-online-production.up.railway.app/api/v1/products?page=1&limit=100')
+    const response = await fetch('api/v1/products?page=1&limit=100')
     const data = await response.json(); // Parses the response as JSON
     const products = data.data.documents
     console.log(products);
@@ -207,7 +218,7 @@ function createProductCart(product){
 // Create the image element
     const img = document.createElement("img");
     if(product.images&&product.images.length>1) {
-        img.src = `https://gym-clothes-online-production.up.railway.app/img/products/${product.images[0]}`;
+        img.src = `img/products/${product.images[0]}`;
     }
     img.alt = "image for trousers";
 
@@ -257,7 +268,7 @@ function getProductInfoPage(e,product){
 // Create the main image
     const mainImage = document.createElement("img");
     if(product.images&&product.images.length>1) {
-        mainImage.src = `https://gym-clothes-online-production.up.railway.app/img/products/${product.images[0]}`
+        mainImage.src = `img/products/${product.images[0]}`
     }
     mainImage.alt = "Product Image";
     mainImage.id = "mainImage"+product.id;
@@ -269,7 +280,7 @@ function getProductInfoPage(e,product){
 // Create thumbnails
     const thumbnail1 = document.createElement("img");
     if(product.images&&product.images.length>1) {
-        thumbnail1.src = `https://gym-clothes-online-production.up.railway.app/img/products/${product.images[0]}`
+        thumbnail1.src = `img/products/${product.images[0]}`
     }
     thumbnail1.alt = "Thumbnail 1";
     thumbnail1.onclick = function () {
@@ -278,7 +289,7 @@ function getProductInfoPage(e,product){
 
     const thumbnail2 = document.createElement("img");
     if(product.images&&product.images.length>1) {
-        thumbnail2.src = `https://gym-clothes-online-production.up.railway.app/img/products/${product.images[1]}`;
+        thumbnail2.src = `img/products/${product.images[1]}`;
     }
     thumbnail2.alt = "Thumbnail 2";
     thumbnail2.onclick = function () {

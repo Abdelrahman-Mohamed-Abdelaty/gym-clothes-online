@@ -14,6 +14,7 @@ const productRouter=require("./routes/products");
 const compression=require('compression');
 const cors=require('cors')
 const bodyParser=require('body-parser');
+const {protect, restrictTo} = require("./controllers/authController");
 const app=express();
 
 //middlewares
@@ -53,6 +54,9 @@ if(process.env.NODE_ENV==="development"){
 }
 
 //routes
+app.get('/admin',protect,restrictTo('admin'),(req,res)=>{
+  res.status(200).render('admin');
+})
 app.use("/api/v1/products",productRouter);
 app.use("/api/v1/users",userRouter);
 app.all("*",(req,res,next)=>{

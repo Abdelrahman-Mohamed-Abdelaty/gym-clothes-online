@@ -3,7 +3,7 @@ const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 
 
-function Alert(type,msg,notReload) {
+function Alert(type,msg) {
     const div = document.createElement('div');
     div.classList.add(`${type}-alert`);
     if(type==='success')
@@ -13,7 +13,9 @@ function Alert(type,msg,notReload) {
 
     setTimeout(()=>{
         div.remove();
-        if(!notReload)
+        if(type==='success')
+            window.location.href='admin'
+        else
             window.location.href='index.html'
     },2000)
 
@@ -27,7 +29,7 @@ if(loginBtn){
             email:email.value,
             password:password.value,
         })
-        const url = 'https://gym-clothes-online-production.up.railway.app/api/v1/users/login';
+        const url = 'api/v1/users/login';
 
         try{
             const response = await fetch(url, {
@@ -41,6 +43,7 @@ if(loginBtn){
                 })
             });
             const responseData = await response.json();
+            console.log(responseData)
             if(!response.ok) {
                 console.log(responseData)
                 Alert('error', responseData.message);

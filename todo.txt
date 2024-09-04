@@ -1,7 +1,4 @@
-add team page
 Complete shop page
 add figma pages
 add responsive
-add admin page
-add login page
 add email in contact us
