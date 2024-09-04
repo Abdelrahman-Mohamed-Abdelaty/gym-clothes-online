@@ -2,4 +2,6 @@ add team page
 Complete shop page
 add figma pages
 add responsive
-change the background of the body of home
+add admin page
+add login page
+add email in contact us

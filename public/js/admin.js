@@ -4,7 +4,6 @@ function Alert(type,msg,notReload) {
     div.classList.add(`${type}-alert`);
     div.textContent = msg;
     document.body.appendChild(div);
-
     setTimeout(()=>{
         div.remove();
         if(!notReload)

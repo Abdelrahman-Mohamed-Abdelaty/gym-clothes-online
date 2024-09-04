@@ -94,7 +94,17 @@ header {
 }
 .project{
     margin: 20px auto 8rem;
-
+}
+.home-page-clothes .project{
+    width: 120rem;
+    color: white;
+}
+.home-page-clothes .project .card .card-text{
+    background-color: whitesmoke;
+    color: black;
+}
+.home-page-clothes{
+    background-image: url("../img/background-space.jpeg");
 }
 .project h2{
     font-size: 3rem;
@@ -133,7 +143,7 @@ header {
 
 }
 .card-text p strong {
-    color: #982d2d;
+    color: #660000;
     font-size:2rem ;
 }
 .card-text p strong:first-child {
@@ -751,4 +761,8 @@ body.blurred::before {
 .apply-discount-btn:hover{
     background-color: #333333;
     color: whitesmoke;
+}
+.white-pg{
+    background-color: white;
+    color: black;
 }
