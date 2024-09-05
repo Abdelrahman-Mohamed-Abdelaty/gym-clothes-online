@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
   <title>Contact Form</title>
 
   <style>
@@ -19,13 +18,12 @@
     }
 
     body {
+      height: 160vh;
       background: url('https://pics.craiyon.com/2023-09-14/cadec770039741d3bb1043ae6310997f.webp') no-repeat center center/cover;
       display: flex;
       flex-direction: column;
       align-items: center;
       font-family: "Pirata One", system-ui;
-      height: 100vh;
-
     }
 
     .logo {
@@ -47,7 +45,6 @@
 
     .contact h1 {
       font-size: 40px;
-      font-family: "Pirata One", system-ui;
       font-style: italic;
       font-weight: 400;
       margin-bottom: 60px;
@@ -55,7 +52,7 @@
     }
 
     .contact form {
-      width: 110%;
+      width: 100%;
       margin: auto;
       background: rgba(0, 0, 0, 0.5);
       padding: 20px;
@@ -70,7 +67,7 @@
       width: 100%;
       padding: 18px;
       background: transparent;
-      border: 2px solid #ec0b0b;
+      border: 2px solid #e90d0d;
       outline: none;
       border-radius: 5px;
       font-size: 18px;
@@ -83,14 +80,13 @@
       color: rgba(240, 255, 255, 0.495);
     }
 
-    .field.half input:first-child {
-      display: inline-block;
-      width: 49%;
+    .field.half {
+      display: flex;
+      justify-content: space-between;
     }
 
-    .field.half input:nth-child(2) {
-      margin-left: 8px;
-      width: 49%;
+    .field.half input {
+      width: 48%;
     }
 
     button {
@@ -123,6 +119,7 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 20px;
+      width: 100%;
     }
 
     .newsletter input[type="email"] {
@@ -167,6 +164,76 @@
     .social i:hover {
       color: #ec0b0b;
     }
+
+    @media (max-width: 1150px) {
+      .contact {
+        width: 90%;
+      }
+
+      .field.half input {
+        width: 48%;
+      }
+
+      .item {
+        font-size: 16px;
+      }
+
+      .logo {
+        width: 160px;
+      }
+
+      button {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .contact {
+        width: 100%;
+      }
+
+      .field.half {
+        flex-direction: column;
+      }
+
+      .field.half input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+
+      .newsletter {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      .newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .newsletter button {
+        width: 100%;
+      }
+
+      .social {
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 0;
+      }
+
+      .social i {
+        font-size: 28px;
+      }
+    }
   </style>
 </head>
 
@@ -210,5 +277,4 @@
   date.innerHTML = dat.toLocaleString();
 </script>
 </body>
-
 </html>
