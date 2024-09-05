@@ -311,7 +311,12 @@ function getProductInfoPage(e,product){
     productTitle.textContent = product.name;
 
     const productForm = createProductForm(product);
-
+    const cancelContainer = document.createElement('div');
+    const a = document.createElement('a')
+    console.log(product._id)
+    a.setAttribute('id',product._id);
+    a.setAttribute("class",'photo-id');
+    productContainer.appendChild(a)
     //Create cancel button
     const cancelButton = document.createElement("button");
     cancelButton.classList.add('cancel-btn');
@@ -320,16 +325,14 @@ function getProductInfoPage(e,product){
         document.body.classList.remove('blurred');
         document.body.removeChild(productContainer)
     })
-
+    cancelContainer.appendChild(cancelButton);
+    cancelContainer.appendChild(a);
+    cancelContainer.classList.add('cancel-btn-container')
 // Append productImages and productDetails to productContainer
     productContainer.appendChild(productImages);
     productContainer.appendChild(productForm);
-    productContainer.appendChild(cancelButton)
-    const a = document.createElement('a')
-    console.log(product._id)
-    a.setAttribute('id',product._id);
-    a.setAttribute("class",'photo-id');
-    productContainer.appendChild(a)
+    productContainer.appendChild(cancelContainer)
+
 
 // Append productContainer to body or a specific container
     document.body.appendChild(productContainer);

@@ -133,7 +133,7 @@ function getProductInfoPage(e,product){
     const productTitle = document.createElement("h2");
     productTitle.classList.add("product-title");
     productTitle.id = "product-title";
-    productTitle.textContent = name;
+    productTitle.textContent = product.name;
 
 // Create product price
     const productPrice = document.createElement("p");
