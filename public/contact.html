@@ -272,9 +272,29 @@
 </footer>
 
 <script>
-  let dat = new Date();
-  let date = document.querySelector(".date");
-  date.innerHTML = dat.toLocaleString();
+    let dat = new Date();
+    let date = document.querySelector(".date");
+    date.innerHTML = dat.toLocaleString();
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phonePattern = /^\d{10}$/;
+    const email = document.getElementById("email").value;
+    const phoneNumber = document.getElementById("number").value;
+    if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+
+    if (!phonePattern.test(phoneNumber)) {
+    alert("Please enter a valid 10-digit phone number.");
+    return;
+  }
+
+
+    alert("Form submitted successfully!");
+  });
 </script>
 </body>
 </html>

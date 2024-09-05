@@ -57,5 +57,4 @@ if(loginBtn){
         }
 
     })
-
 }
