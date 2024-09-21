@@ -32,7 +32,7 @@ The **Gym Clothes Shop** is an online platform designed to showcase and sell gym
 
 PPlaceholder for 12 gym clothes photos to showcase the product range:
 
-1. ![Photo 1]([https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/projectPhotos/img.png](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img.png)
+1. ![Photo 1]([https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/projectPhotos/img.png](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img.png))
 2. ![Photo 2](https://github.com/your-username/your-repo-name/blob/main/images/photo2.jpg)
 3. ![Photo 3](https://github.com/your-username/your-repo-name/blob/main/images/photo3.jpg)
 4. ![Photo 4](https://github.com/your-username/your-repo-name/blob/main/images/photo4.jpg)
