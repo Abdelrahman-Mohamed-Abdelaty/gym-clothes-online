@@ -29,9 +29,6 @@ The **Gym Clothes Shop** is an online platform designed to showcase and sell gym
 - **Mongoose**: MongoDB object modeling for handling data.
 
 ## Photo Gallery
-
-PPlaceholder for 12 gym clothes photos to showcase the product range:
-
 1. ![Photo 1](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img.png)
 2. ![Photo 2](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img1.png)
 3. ![Photo 3](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img2.png)
