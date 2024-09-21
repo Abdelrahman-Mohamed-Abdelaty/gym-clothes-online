@@ -1,5 +1,3 @@
----
-
 # Gym Clothes Shop
 
 **Live View:** [Gym Clothes Shop](https://gym-clothes-online-production.up.railway.app/)
