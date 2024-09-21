@@ -26,17 +26,17 @@ The **Gym Clothes Shop** is an online platform designed to showcase and sell gym
 
 ## Photo Gallery
 1. ![Photo 1](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img.png)
-2. ![Photo 2](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img1.png)
-3. ![Photo 3](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img2.png)
-4. ![Photo 4](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img3.png)
-5. ![Photo 5](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img4.png)
-6. ![Photo 6](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img5.png)
-7. ![Photo 7](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img6.png)
-8. ![Photo 8](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img7.png)
-9. ![Photo 9](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img8.png)
-10. ![Photo 10](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img9.png)
-11. ![Photo 11](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img10.png)
-12. ![Photo 12](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img11.png)
+2. ![Photo 2](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_1.png)
+3. ![Photo 3](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_2.png)
+4. ![Photo 4](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_3.png)
+5. ![Photo 5](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_4.png)
+6. ![Photo 6](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_5.png)
+7. ![Photo 7](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_6.png)
+8. ![Photo 8](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_7.png)
+9. ![Photo 9](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_8.png)
+10. ![Photo 10](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_9.png)
+11. ![Photo 11](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_10.png)
+12. ![Photo 12](https://github.com/Abdelrahman-Mohamed-Abdelaty/gym-clothes-online/blob/main/projectPhotos/img_11.png)
 
 
 ## Installation
