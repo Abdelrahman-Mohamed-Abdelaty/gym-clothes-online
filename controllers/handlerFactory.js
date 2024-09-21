@@ -18,9 +18,6 @@ exports.deleteFactory=Model=>catchAsync (async (req,res,next)=>{
 })
 
 exports.createFactory=Model=>catchAsync (async (req,res,next)=>{
-    if(!req.body.images || req.body.images.length!==2){
-        return next(new AppError('You must add 2 image only for this product'));
-    }
     const document=await Model.create(req.body);
     res.status(201).json({
         status:"success",
@@ -43,7 +40,7 @@ exports.updateFactory=Model=>catchAsync(async (req,res,next)=>{
             document:doc
         }
     })
-    if(req.body.images&&doc.images){
+    if(req.body.images){
         const promises= doc.images.map((image)=>{
             console.log(image);
            return fs.unlink(`public/img/products/${image}`)

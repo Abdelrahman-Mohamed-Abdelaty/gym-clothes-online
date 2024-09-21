@@ -1,4 +1,9 @@
 Complete shop page
-add figma pages
 add responsive
 add email in contact us
+add senario of shopping
+button
+order request
+store it in db
+send email to admin
+add login to user for cart management and order tracking

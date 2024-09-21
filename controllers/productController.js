@@ -4,6 +4,8 @@ const {getAllFactory, deleteFactory, updateFactory, createFactory, getOneFactory
 
 const sharp=require("sharp");
 const multer=require('multer');
+const AppError = require("../utils/appError");
+const {promises: fs} = require("fs");
 const multerStorage=multer.memoryStorage();
 
 const multerFilter=(req,file,cb)=>{
@@ -43,6 +45,13 @@ exports.resizeProductPhotos=async (req,res,next)=>{
             req.body.images.push(filename);
         })
     )
+    next();
+}
+
+exports.validateImages = (req,res,next)=>{
+    if(!req.body.images || req.body.images.length!==2){
+        return next(new AppError('You must add 2 image only for this product'));
+    }
     next();
 }
 

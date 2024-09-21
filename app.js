@@ -11,6 +11,7 @@ const AppError=require("./utils/appError");
 const globalErrorHandler=require("./controllers/errorController")
 const userRouter=require("./routes/users");
 const productRouter=require("./routes/products");
+const orderRouter=require("./routes/orders");
 const compression=require('compression');
 const cors=require('cors')
 const bodyParser=require('body-parser');
@@ -59,6 +60,7 @@ app.get('/admin',protect,restrictTo('admin'),(req,res)=>{
 })
 app.use("/api/v1/products",productRouter);
 app.use("/api/v1/users",userRouter);
+app.use("/api/v1/orders",orderRouter);
 app.all("*",(req,res,next)=>{
   const err=new AppError(`Can't find ${req.originalUrl} on this server`,404);
   next(err);

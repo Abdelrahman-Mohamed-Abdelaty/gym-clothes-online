@@ -10,7 +10,6 @@ module.exports=class {
         excludedFields.forEach((el)=>delete queryObj[el]);
         let queryStr=JSON.stringify(queryObj);
         queryStr=queryStr.replace(/\b(lte|lt|gt|gte)\b/g,match=>`$${match}`);
-
         this.query.find(JSON.parse(queryStr));
         return this;
     }

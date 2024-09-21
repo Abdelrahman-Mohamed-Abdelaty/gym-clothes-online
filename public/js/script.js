@@ -8,7 +8,6 @@ async function start (){
     const data = await response.json(); // Parses the response as JSON
     const products = data.data.documents
     console.log(products);
-
     //Build the product card
     products.forEach((product)=>{
         createProductCart(product);
@@ -285,10 +284,10 @@ function toggleNav() {
         body.style.overflow = 'hidden';
     }
 }
-const shopNowBtn = document.querySelector('.mainbuttonshopnow')
-if(shopNowBtn){
-    shopNowBtn.addEventListener('click',(e)=>{
-        e.stopPropagation();
-        window.location.href = 'shop.html'
-    })
-}
+// const shopNowBtn = document.querySelector('.mainbuttonshopnow')
+// if(shopNowBtn){
+//     shopNowBtn.addEventListener('click',(e)=>{
+//         e.stopPropagation();
+//         window.location.href = 'shop.html'
+//     })
+// }

@@ -10,7 +10,6 @@ function Alert(type,msg) {
         div.classList.add(`white-pg`);
     div.textContent = msg;
     document.body.appendChild(div);
-
     setTimeout(()=>{
         div.remove();
         if(type==='success')
@@ -18,7 +17,6 @@ function Alert(type,msg) {
         else
             window.location.href='index.html'
     },2000)
-
 }
 
 if(loginBtn){

@@ -109,6 +109,7 @@ header {
 .project h2{
     font-size: 3rem;
     text-transform: uppercase;
+    color: white;
 }
 .project h2 span{
     font-size: 4rem;
