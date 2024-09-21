@@ -1,5 +1,3 @@
-Here's the updated README file with a placeholder section for 12 photos:
-
 ---
 
 # Gym Clothes Shop
