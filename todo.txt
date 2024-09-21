@@ -1,9 +1,16 @@
-Complete shop page
-add responsive
-add email in contact us
-add senario of shopping
-button
-order request
-store it in db
-send email to admin
-add login to user for cart management and order tracking
+live view:https://gym-clothes-online-production.up.railway.app/
+
+this is gym clothes shop
+
+tools:
+nodejs,mongodb,pug,html,css,js,mongoose
+
+the server side to let admins login,create,update delete gym clothes
+
+pages:
+aboutUs page,
+checkout for orders
+login page
+contact page
+admin page for logged-in users
+index page to view the clothes
